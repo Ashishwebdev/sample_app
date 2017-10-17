@@ -17,6 +17,8 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore Spring files.
+/spring/*.pid
 /node_modules
 /yarn-error.log
 
