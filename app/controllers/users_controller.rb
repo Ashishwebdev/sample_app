@@ -19,6 +19,10 @@ class UsersController < ApplicationController
 
   end
 
+  def User.new_token
+    SecureRandom.urlsafe_base64
+  end
+
   private
   def params_new
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
