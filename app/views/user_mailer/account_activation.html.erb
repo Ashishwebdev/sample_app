@@ -1,0 +1,4 @@
+<h1>Sample app</h1>
+<p>Hi <%= @user.name%></p>
+<p>Welcome to the sample app .Please click on the link below for account activation</p>
+<%= link_to "Acrivate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
